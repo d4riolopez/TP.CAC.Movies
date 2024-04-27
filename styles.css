@@ -22,7 +22,7 @@
 .listaItem {
     margin-right: 20px;
 }
-/*CSS DE INICIAR SESIÓN*/
+/*CSS Iniciar Sesion*/
 .bodyIn{
     height: 100vh;
     background-image: url("imagenes/bg-register.jpg");
@@ -113,12 +113,12 @@ button {
     color: white;
     
     border-radius: 5px;
-     /* Agregar efecto de botón presionado */
+     /* Efecto de botón presionado */
      transition: transform 0.3s, box-shadow 0.3s;}
 .linkNav.iniciarSesion:hover{
          background-color: #9f3647
 }
-/*CSS DE REGISTRARSE*/
+/*CSS De Registrarse */
 
 @import url('../css2');
 
