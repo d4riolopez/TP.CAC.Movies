@@ -1,0 +1,252 @@
+﻿@import url('../css2');
+body{
+    background-color: rgb(7, 7, 9);
+    font-family: "Nunito", monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    width: 100vw;
+    color: white;
+    background-color: #9f3647;
+}
+footer a{
+    color: white;
+    width: 80%;
+    text-align: center;
+}
+.footerBtns{
+    width: 60%;
+    margin: 30px auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header{
+    background-color: #9f3647;
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+header div{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row {
+    width: 100vw;
+    margin-bottom: 10px;
+}
+.link {
+    color: white;
+    padding: 0.2rem 0.6rem;;
+    text-decoration: none;
+    margin: 0 10px;
+    text-align: center;
+}
+
+/* The footer links don't have footer anim */
+header .link:hover{
+    box-shadow: 0 0 15px rgb(52, 52, 52);
+    transition: ease-in .1s;
+    background-color: #9f3647;
+}
+.darkBG{
+    border-radius: 7px;
+    background-color: #1e0a0e;
+}
+i{
+    font-size: 1rem;
+    height: 100%;
+}
+#logoContainer span{
+    margin-left: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bolder;
+}
+#logoContainer:hover, #logoContainerForm:hover{
+    animation: shake 1s;
+    animation-iteration-count: infinite;
+}
+
+#logoContainerForm{
+    font-size: 1.2rem;
+    position: fixed;
+    top: 30px;
+    left: 60px;
+}
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+@media (min-width: 770px) {
+    .footerBtns{
+        flex-direction: row;
+    }
+    .link{    
+        margin-right: 20px;
+    }
+}
+
+form{
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 100px 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+    font-size: 1.2rem; 
+    border-radius: 20px;
+    border: 2px solid #9f3647;
+    background-color: #333333;
+    outline: none;
+    color:rgb(255, 255, 255);
+        }
+form h1{
+    width: 100%;
+}
+form a{
+    color: #ffffff65;
+    text-align: left;
+    width: 100%;
+}
+
+form button{
+    width: 100%;
+}
+
+form input{
+    box-sizing: border-box;
+}
+
+#navLinksDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.container{
+    max-width: 90vw;
+}
+@media (min-width: 768px) {
+    #navLinksDiv{
+        justify-content: end;
+    }
+}
+@import url('../css2');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right top, #1e1e1e73,#13131373), url(imagenes/bg-register.jpg);
+
+    font-family: "Nunito", monospace;
+}
+
+#formSection {
+    width: 80%;
+    background-color: #1c1c1c;
+    padding: 16px;
+    border-radius: 20px;
+}
+
+#formSection h1{
+    text-align: center;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, select {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #9f3647;
+    border-radius: 15px;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #9f3647;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0 10px 0;
+}
+
+#termConds{
+    display: flex; 
+    align-items: center;
+}
+
+#logo{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 79px;
+    height: 28px;
+}
+
+#termConds{
+    width: 100%;
+}
+#termsCheck{
+    flex: 1;
+}
+#termCondsLabel{
+    color: white;
+    flex: 10;
+} 
+@media (min-width: 768px) {
+    #formSection {
+        width: 30%;
+    }
+    #formSection h1{
+        text-align: left;
+        /* The example pages changes text-align of the Register Tittle to left on PC, it's centered normally */
+    }
+    #logo{
+        width: 112px;
+        height: 40px;
+    }
+}
