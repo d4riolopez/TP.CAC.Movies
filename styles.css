@@ -113,12 +113,12 @@ button {
     color: white;
     
     border-radius: 5px;
-     /* Efecto de botón presionado */
+     /* Efecto para botón presionado */
      transition: transform 0.3s, box-shadow 0.3s;}
 .linkNav.iniciarSesion:hover{
          background-color: #9f3647
 }
-/*CSS De Registrarse */
+/*CSS para Registrarse */
 
 @import url('../css2');
 
