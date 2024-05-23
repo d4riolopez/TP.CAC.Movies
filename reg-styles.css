@@ -243,7 +243,8 @@ button {
     }
     #formSection h1{
         text-align: left;
-        /* The example pages changes text-align of the Register Tittle to left on PC, it's centered normally */
+        /* The example pages changes text-align of the Register Tittle 
+        to left on PC, it's centered normally */
     }
     #logo{
         width: 112px;
