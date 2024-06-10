@@ -36,9 +36,9 @@ btnSiguiente.accessKeyLabel("click",()=>{
 })
 const cargarPeliculas = async()=>{
     try{
-      const respuesta =await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=b9d315d2b4b5d8bfdc91fed0961682e4&languaje=es-MX&page=${pagina}`); 
+      const respuesta =await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=(b9d315d2b4b5d8bfdc91fed0961682e4)&languaje=es-MX&page=${pagina}`); 
       console.log(respuesta);
-      if(respuesta.status ===200){
+      if(respuesta.status ==200){
         const datos = await respuesta.json();
         console.log(datos); 
         let peliculas = [];

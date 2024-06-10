@@ -15,7 +15,7 @@ a{
 }
 
 footer{
-    width: 200vw;#antes estaba en 100
+    width: 100vw;
     color: white;
     background-color: #9f3647;
 }
@@ -122,7 +122,7 @@ form h1{
     width: 100%;
 }
 form a{
-    color: #ffffff65;
+    color: #9f3647;
     text-align: left;
     width: 100%;
 }
