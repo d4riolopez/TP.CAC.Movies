@@ -82,7 +82,7 @@ i{
     font-weight: bolder;
 }
 #logoContainer:hover, #logoContainerForm:hover{
-    animation: shake 1s;
+    animation: shake 2s;
     animation-iteration-count: infinite;
 }
 
@@ -95,7 +95,7 @@ i{
 
 
 @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
+     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
     20% { transform: translate(-3px, 0px) rotate(1deg); }
     30% { transform: translate(3px, 2px) rotate(0deg); }
@@ -108,7 +108,7 @@ i{
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 
-@media (min-width: 770px) {
+@media (min-width: 700px) {
     .footerBtns{
         flex-direction: row;
     }
@@ -155,9 +155,9 @@ form input{
     flex-direction: row;
 }
 .container{
-    max-width: 90vw;
+    max-width: 80vw;
 }
-@media (min-width: 768px) {
+@media (min-width: 750px) {
     #navLinksDiv{
         justify-content: end;
     }
@@ -237,7 +237,7 @@ button {
     color: white;
     flex: 10;
 } 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
     #formSection {
         width: 30%;
     }

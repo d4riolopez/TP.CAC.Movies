@@ -10,6 +10,7 @@
   <link href="styles.css" rel="stylesheet">
   <link href="c-styles.css" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <div class="container">
@@ -27,7 +28,8 @@
       </div>
     </div>
   </header> 
-    <section id="bannerContainer" data-aos="zoom-in" data-aos-duration="1600">
+
+    <section id="bannerContainer" data-aos="zoom-in" data-aos-duration="1800">
         <h1>Películas y series ilimitadas en un solo lugar.</h1>
         <h2>Disfrute donde quiera.</h2>
         <h3>Cancele en cualquier momento.</h3>
@@ -35,7 +37,8 @@
         <button id="BotonRegistro" class="whiteHover">Suscribirse</button>
             </a>
     </section>
-    <section id="searcherContainer" data-aos="fade-up" data-aos-delay="140" data-aos-duration="2400">
+
+    <section id="searcherContainer" data-aos="fade-up" data-aos-delay="160" data-aos-duration="2400">
       <div class="input-group">
         <h1>¿Qué está buscando para ver?</h1>
         <input type="search" class="form-control rounded" placeholder="Película o Serie..." aria-label="Search" aria-describedby="search-addon">
@@ -43,33 +46,34 @@
       </div>
     </section>
 <hr>
-    <section id="Tendencias" data-aos="fade-up" data-aos-delay="120" data-aos-duration="1200">
+    <section id="Tendencias" data-aos="fade-up" data-aos-delay="120" data-aos-duration="1600">
         <h2 class="mb-5 mt-5 text-center m-auto titular">Tendencias</h2>
         <div id="moviesGrid">
           <div class="movie">
                 <a href="details.html">
-                  <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qhb1qOilapbapxWQn9jtRCMwXJF.jpg" alt="Wonka">
+                  <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/qhb1qOilapbapxWQn9jtRCMwXJF.jpg" alt="Wona">
                 </a>
             <div class="movieTittle">
                   <h4>Wonka</h4>
             </div>
           </div>
+          
           <div class="movie">
               <a href='details.html'>
                 <img src="imagenes/nowayup.jpg" alt="No Way Up">
               </a>
-          <div class="movieTittle">
+            <div class="movieTittle">
                 <h4>No Way Up</h4>
-          </div>
+            </div>
           </div>
 
           <div class="movie">
               <a href="details.html">
                 <img src="imagenes/rebelmoon.jpg" alt="Rebel Moon — Part Two: The Scargiver">
               </a>
-          <div class="movieTittle">
+            <div class="movieTittle">
                 <h4>Rebel Moon — Part Two: The Scargiver</h4>
-          </div>
+            </div>
           </div>
 
           <div class="movie">
@@ -223,15 +227,18 @@
         </div>
       </div>
 
-      <div class="contenedor" id="contenedor"></div>
+      <div class="contenedor" id="contenedor"></div> 
 
         <div class="paginacion">
-              <button id="btnAnterior" class="btn btn-primary m-2 p-1">Anterior</button>
-              <button id="btnSiguiente" class="btn btn-primary m-2 p-1">Siguiente</button>
+          <!-- <button class="whiteHover" id="searchButton">Buscar</button> -->
+              <button id="previous" class="btnAnterior" >Anterior</button>
+              <button id="next" class="btnSiguiente" >Siguiente</button>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/booystrap@5.3.2/dist/j"></script>
+    </div>    
+        <script src="../npm/bootstrap%405.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="index.js"></script>
-      </div>  
+      <!--/div --> 
+    
 </section>
 
 <hr>
