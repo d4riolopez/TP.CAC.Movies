@@ -25,7 +25,7 @@
 /*CSS Iniciar Sesion*/
 .bodyIn{
     height: 100vh;
-    background-image: url("imagenes/bg-register.jpg");
+    background-image: url("/imagenes/bg-register.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -124,7 +124,7 @@ button {
 
 #bannerContainer {
     color: white;
-    background: url(imagenes/banner-bg.jpg);
+    background: url(/imagenes/banner-bg.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -224,9 +224,9 @@ button {
 #searchButton {
     background-color: #b33a4e;
     color: white;
-    border-radius: 55px;
-    border-bottom-left-radius: 55px;
-    border-top-left-radius: 55px;
+    border-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
 }
 #searchButton:hover {
     background-color: #42151c;
