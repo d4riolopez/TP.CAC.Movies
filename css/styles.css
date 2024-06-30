@@ -25,7 +25,7 @@
 /*CSS Iniciar Sesion*/
 .bodyIn{
     height: 100vh;
-    background-image: url("/imagenes/bg-register.jpg");
+    background-image: url("/imagenes/img/bg-register.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -124,7 +124,7 @@ button {
 
 #bannerContainer {
     color: white;
-    background: url(/imagenes/banner-bg.jpg);
+    background: url(/imagenes/img/banner-bg.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
