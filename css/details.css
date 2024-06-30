@@ -13,8 +13,8 @@
 #detailsBanner{
     margin-top: 10vh;
     width: 100vw;
-    height: 150vh;
-    background: linear-gradient(to right top, #6d6969a7, #575353a7), url("../cac_movies_javaphp/assets/img/mario-bg.jpg");
+    height: 260vh;
+    background: linear-gradient(to right top, #6d6969a7, #575353a7), url("/imagenes/img/mario-bg.jpg");
     background-size: cover;
     background-position: center;
 }
