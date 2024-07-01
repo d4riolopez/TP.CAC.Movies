@@ -172,7 +172,6 @@ body {
     justify-content: center;
     align-items: center;
     background:linear-gradient(to right top, #1e1e1e73,#13131373), url(/imagenes/img/bg-register.jpg);
-
     font-family: "Nunito", monospace;
 }
 
@@ -197,7 +196,7 @@ form {
 input, select {
     margin: 10px 0;
     padding: 10px;
-    width: 100%;
+    width: 100%; 
     border: 1px solid #9f3647;
     border-radius: 15px;
     background-color: #1c1c1c;

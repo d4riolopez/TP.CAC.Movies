@@ -11,21 +11,29 @@
 }
 
 #detailsBanner{
-    margin-top: 10vh;
+    margin-top: 12vh;
     width: 100vw;
-    height: 260vh;
+    height: 400vh;
     background: linear-gradient(to right top, #6d6969a7, #575353a7), url("/imagenes/img/mario-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#detailsBanner2{
+    margin-top: 12vh;
+    width: 100vw;
+    height: 400vh;
+    background: linear-gradient(to right top, #6d6969a7, #575353a7), url("/imagenes/img/peliculas-bg.jpg");
     background-size: cover;
     background-position: center;
 }
 
 #detailsBanner img{
     border-radius: 40px;
-    height: 406px;
+    height: 340px;
 }
 
 #detailsContainer {
-    width: 75%;
+    width: 70%;
     margin: 120px auto 200px auto;
     display: flex;
     flex-direction: column;
@@ -97,7 +105,7 @@ h4{
         flex-direction: row;
     }
     #detailsBanner{
-        height: 70vh;
+        height: 85vh;
     }
     #trailerSection{
         flex-direction: row;

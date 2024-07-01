@@ -25,7 +25,7 @@
 /*CSS Iniciar Sesion*/
 .bodyIn{
     height: 100vh;
-    background-image: url("/imagenes/img/bg-register.jpg");
+    background-image: url("/imagenes/img/register-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -99,13 +99,13 @@ form{
     font-weight: 500;
 }
 button {
-    padding: 10px 20px;
+    padding: 10px 30px;
     background-color: #9f3647;
     color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
-    margin: 10px 0 10px 0;
+    margin: 0px 10px 20px 50px;
 }
 
 .linkNav.iniciarSesion{
@@ -169,8 +169,8 @@ button {
     padding: 10px;
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
-
     font-weight: 200;
+
 }
 
 #mainBanner {
@@ -191,7 +191,7 @@ button {
 }
 
 .whiteHover:hover{
-    scale: .95;
+    scale: .90;
     transition: .1s ease-in-out;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.411);
 }
@@ -207,8 +207,8 @@ button {
 
 
 .input-group {
-    width: 60%;
-    height: 50px;
+    width: 100%;
+    height: 40px;
 }
 .input-group h1 {
     color: white;
@@ -218,19 +218,19 @@ button {
 }
 
 .form-control {
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 #searchButton {
     background-color: #b33a4e;
     color: white;
-    border-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
+    border-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
 }
 #searchButton:hover {
     background-color: #42151c;
-    transition: ease-in .1s;
+    transition: ease-in .2s;
 }
 
 .movie {
@@ -383,6 +383,6 @@ hr{
     }
 
     .input-group {
-        width: 40%;
+        width: 45%;
     }
 }

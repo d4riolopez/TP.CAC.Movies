@@ -11,12 +11,12 @@ form.addEventListener('submit', mail=> {
   let login = false
 
   if(!validatemail.test(email.value)){
-    warnings += "El correo no es valido .." <br>
+    warning += "El correo no es valido .." <br>
     login == true;
   }
 
   if(!password.value.length <8 ){
-    warnings += "la contraseña no es valida .." <br>
+    warning += "la contraseña no es valida .." <br>
     login== true;
   }
 
