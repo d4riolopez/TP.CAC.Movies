@@ -16,17 +16,22 @@
             <span>Inicio Sesion | CAC-MOVIES</span>
         </a>
     </div>
-
+    
     <div id="formSection1" data-aos="zoom-in" data-aos-duration="900">
         <form action="" id="inicioForm">
             <h1>Iniciar sesión</h1>
-            <input type="mail" placeholder="Mail" name="Correo electrónico:">
-            <input type="password" placeholder="Password" name="Contraseña:">
+            <input type="mail" placeholder="Mail" name="correoElectronico">
+            <input type="password" placeholder="Password" name="contraseña">
             <button type="submit" class="boton">Iniciar Sesión</button>
             <a href="/html/registro.html">Registrarse</a>
             
         </form>
-      </div>
+        <!-- Aquí añadimos el elemento para mostrar advertencias -->
+        <div id="warnings" style="display: none; color: red;">
+            <!-- Este div estará oculto inicialmente y se mostrará cuando haya advertencias -->
+        </div>
+
+    </div>
       <script src="../aos%402.3.1/dist/aos.js"></script>
       <script src="/Js/iniciosesion.js"></script>
       <script>

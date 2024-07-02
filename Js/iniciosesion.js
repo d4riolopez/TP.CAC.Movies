@@ -1,26 +1,39 @@
-const email = document.getElementById("email")
-const password = document.getElementById("password")
-const form = document.getElementById("form")
-const warning = document.getElementById("warnings")
+const emailInput = document.getElementsByName("correoElectronico")[0]; // Seleccionamos el primer elemento con name="correoElectronico"
+const passwordInput = document.getElementsByName("contraseña")[0];
+const form = document.getElementById("inicioForm");
+const warning = document.getElementById("warnings");
 
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Evitamos que el formulario se envíe automáticamente
+  
+  let validateMail = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3,4})+$/;
+  let login = true; // Cambiamos a true por defecto, para asegurarnos de mostrar los errores si no se cambia
 
-form.addEventListener('submit', mail=> {
-  mail.preventDefault
-
-  let validatemail =/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3,4})+$/
-  let login = false
-
-  if(!validatemail.test(email.value)){
-    warning += "El correo no es valido .." <br>
-    login == true;
+  // Validación del correo electrónico
+  if (!validateMail.test(emailInput.value)) {
+    warning.innerHTML = "El correo no es válido.<br>";
+    login = false; // Cambiamos a false si hay error
   }
 
-  if(!password.value.length <8 ){
-    warning += "la contraseña no es valida .." <br>
-    login== true;
+  // Validación de la contraseña
+  if (passwordInput.value.length < 8) {
+    warning.innerHTML += "La contraseña debe tener al menos 8 caracteres.<br>";
+    login = false; // Cambiamos a false si hay error
   }
 
-  if(login){
-    parrafo.innerHTML = warning
+  // Validación de campos vacíos (si prefieres manejarlo antes de la validación individual)
+  if (emailInput.value === "" || passwordInput.value === "") {
+    alert("Debe completar los campos!");
+    return; // Salimos de la función si faltan campos
   }
-})
+
+  // Mostrar mensajes de advertencia si hay errores
+  if (!login) {
+    warning.style.display = "warnings"; // Mostramos el div de advertencias
+    warning.scrollIntoView(); // Hacemos scroll hacia el elemento de advertencias
+    return; // Salimos de la función si hay errores
+  }
+
+  // Si no hay errores, podrías enviar el formulario aquí si es necesario
+  form.submit(); // Enviamos el formulario
+});
