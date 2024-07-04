@@ -37,12 +37,16 @@
          </select>
     
          <div id="termConds">
-          <input id="termsCheck" type="checkbox" id="termCondsInput">
+          <input type="checkbox" name="termsCheck"  id="termCondsInput">
           <label id="termCondsLabel" for="terminos">Acepte Términos y Condiciones</label>
          </div>
           <button type="submit" class="registerbtn">Registrese</button>
           <a href="">Necesita ayuda?</a>
         </form>
+        <!-- Aquí añadimos el elemento para mostrar advertencias -->
+        <div id="warnings" style="display: none; color: red;">
+          <!-- Este div estará oculto inicialmente y se mostrará cuando haya advertencias -->
+        </div>
       </div>
         <script src="../aos%402.3.1/dist/aos.js"></script>
         <script>

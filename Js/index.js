@@ -12,6 +12,7 @@ function cambiarColor(){
 searchButton.addEventListener("click",cambiarColor);
 
 //cambia el color de fondo del boton de registro
+
 //btn2.addEventListener("click"),()=>{} //funcion anonima
 btnIniciarSesion.addEventListener("mouseenter"),function () { btnIniciarSesion.backgroundColor = "#9f3647"; } 
 

@@ -9,6 +9,11 @@ form.addEventListener('submit', function(event) {
   let validateMail = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3,4})+$/;
   let login = true; // Cambiamos a true por defecto, para asegurarnos de mostrar los errores si no se cambia
 
+   // Validación de campos vacíos (si prefieres manejarlo antes de la validación individual)
+   if (emailInput.value === "" && passwordInput.value === "") {
+    alert("Debe completar los campos!");
+    return; // Salimos de la función si faltan campos
+  }
   // Validación del correo electrónico
   if (!validateMail.test(emailInput.value)) {
     warning.innerHTML = "El correo no es válido.<br>";
@@ -21,11 +26,7 @@ form.addEventListener('submit', function(event) {
     login = false; // Cambiamos a false si hay error
   }
 
-  // Validación de campos vacíos (si prefieres manejarlo antes de la validación individual)
-  if (emailInput.value === "" || passwordInput.value === "") {
-    alert("Debe completar los campos!");
-    return; // Salimos de la función si faltan campos
-  }
+ 
 
   // Mostrar mensajes de advertencia si hay errores
   if (!login) {
